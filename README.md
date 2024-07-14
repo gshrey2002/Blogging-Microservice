@@ -70,3 +70,4 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 - ME - [Shrey Gupta](https://www.linkedin.com/in/shrey-gupta-11a350196/)
 - LeetCode - [https://leetcode.com/u/guptashrey163/](https://leetcode.com/u/guptashrey163/)
+- Gmail - [GMAIL](guptashrey163@gmail.com)
