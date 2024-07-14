@@ -1,0 +1,6 @@
+[submodule "auth-service-nestjs"]
+	path = auth-service-nestjs
+	url = https://github.com/gshrey2002/Auth-service-nestjs.git
+[submodule "blog-service-nestjs"]
+	path = blog-service-nestjs
+	url = https://github.com/gshrey2002/blog-service_nestjs.git

@@ -1,0 +1,32 @@
+version: '3'
+services:
+  auth-service:
+    build:
+      context: ./auth-service
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - JWT_SECRET=yourSecretKey
+      - MONGO_URL=mongodb+srv://guptashrey163:9911043878@cluster0.3n8hfgt.mongodb.net/
+    networks:
+      - my-network
+
+  blog-service:
+    build:
+      context: ./blog-service
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    environment:
+      - JWT_SECRET=yourSecretKey
+      - MONGO_URL=mongodb+srv://guptashrey163:blog-service@blog-service.copboac.mongodb.net/
+      - authBaseUrl=http://auth-service:3000
+    depends_on:
+      - auth-service
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge
