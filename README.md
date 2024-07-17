@@ -16,6 +16,7 @@ This project breaks down the monolithic go blog backend project provided at [gos
 - mongo
 - redis (Future Scope)
 - authorization => role based authorization to be added
+- Added refresh tokens for better user experience 
 
 ### Project Directories
 
